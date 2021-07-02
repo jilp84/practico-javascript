@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Figuras Geométricas</h1>
+    </header>
+    <section>
+        <h2>Calcula el área y perímetro de un cuadrado</h2>
+        <hr>
+        <form>
+            <div class="block">
+                <label for="inputCuadrado">
+                    Escribe cuánto mide cada lado e tu cuadrado:
+                </label>
+            </div>
+            <div class="block">
+                <input type="number" id="inputCuadrado">
+            </div>
+            <div class="block">
+                <button type="button" onclick="calcularPerimetroCuadrado()">Calcular Perímetro</button>
+                <button type="button" onclick="calcularArea()">Calcular el área</button>
+            </div>
+        </form>
+
+        <div class="block">
+            <p id="resultadoCuadrado"></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Calcula el área y perímetro de un triangulo</h2>
+        <hr>
+        <form>
+            <div class="block">
+                <label for="inputTrianguloLadoA">
+                    Lado A:
+                </label>
+            </div>
+            <div class="block">
+                <input type="number" id="inputTrianguloLadoA">
+            </div>
+            <div class="block">
+                <label for="inputTrianguloLadoB">
+                    Lado B:
+                </label>
+            </div>
+            <div class="block">
+                <input type="number" id="inputTrianguloLadoB">
+            </div>
+            <div class="block">
+                <label for="inputTrianguloLadoBase">
+                    Lado Base:
+                </label>
+            </div>
+            <div class="block">
+                <input type="number" id="inputTrianguloLadoBase">
+            </div>
+            <div class="block">
+                <label for="inputTrianguloLadoAltura">
+                    Lado Altura:
+                </label>
+            </div>
+            <div class="block">
+                <input type="number" id="inputTrianguloLadoAltura">
+            </div>
+            <div class="block">
+                <button type="button" onclick="calcularPerimetroTriangulo()">Calcular Perímetro</button>
+                <button type="button" onclick="calcularAreaTriangulo()">Calcular el área</button>
+            </div>
+        </form>
+
+        <div class="block">
+            <p id="resultadoTriangulo"></p>
+        </div>
+    </section>
+
+    <script src="./figuras.js"></script>
+</body>
+</html>
