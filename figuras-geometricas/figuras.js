@@ -98,3 +98,24 @@ function calcularAreaTriangulo() {
     resultado.innerHTML = `El área del triangulo es: ${area}`;
 
 }
+
+function calcularPerimetroCirculo() {
+    const radio = document.getElementById("inputRadio");
+    const radioValue = radio.value;
+
+    const perimetro = perimetroCirculo(radioValue);
+
+    const resultado = document.getElementById("resultadoCirculo");
+    resultado.innerHTML = `El perimetro del circulo es: ${perimetro}`;
+
+}
+
+function calcularAreaCirculo() {
+    const radio = document.getElementById("inputRadio");
+    const radioValue = radio.value;
+
+    const area = areaCirculo(radioValue);
+
+    const resultado = document.getElementById("resultadoCirculo");
+    resultado.innerHTML = `El area del circulo es: ${area}`;
+}
